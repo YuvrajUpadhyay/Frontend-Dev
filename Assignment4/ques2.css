@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+header {
+  background: #222;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 1em;
+  text-decoration: none;
+}
+main section {
+  padding: 4vh 2em;
+  color: white;
+}
+.intro {
+  background: url('C:\Users\upadh\Downloads\D.jpeg') center/cover no-repeat; background:linear-gradient(to right,green);
+  background-attachment: fixed;
+}
+.culture {
+  background: linear-gradient(to right, red);
+}
+.landmarks {
+  background: radial-gradient(circle, blue);
+}
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+}
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}

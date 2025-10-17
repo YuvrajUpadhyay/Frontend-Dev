@@ -1,0 +1,65 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #003366;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: white;
+  margin-left: 2em;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  margin-top: 80px; /* height of fixed header */
+  padding: 2rem;
+}
+.bio {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.bio img {
+  width: 20%;
+  max-width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.bio p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+/* Footer */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}

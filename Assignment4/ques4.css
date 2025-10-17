@@ -1,0 +1,24 @@
+body {
+  font-family: Georgia, serif;
+  padding: 2em;
+  background: #fefefe;
+}
+article p {
+  margin-bottom: 1.5em;
+}
+p::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
+p::first-line {
+  font-weight: bold;
+}
+mark {
+  background: #ffeb3b;
+}
+blockquote {
+  border-left: 4px solid #2196f3;
+  background: #e3f2fd;
+  padding: 1em;
+  margin: 1em 0;
+}

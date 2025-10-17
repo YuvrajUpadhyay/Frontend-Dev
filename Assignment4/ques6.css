@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 2em;
+  background: #f9f9f9;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+.photo {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.photo img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.photo:hover img {
+  transform: scale(1.1);
+}
+.photo span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  padding: 0.5em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.photo:hover span {
+  opacity: 1;
+}

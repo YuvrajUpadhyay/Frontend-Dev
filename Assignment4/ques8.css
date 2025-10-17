@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #003366;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+.container {
+  display: flex;
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
+}
+aside {
+  width: 200px;
+  background: #f0f0f0;
+  padding: 1em;
+}
+nav a {
+  display: block;
+  margin-bottom: 1em;
+  text-decoration: none;
+  color: #003366;
+}
+main {
+  flex: 1;
+  padding: 2em;
+  display: flex;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+.box {
+  flex: 1 1 300px;
+  background: white;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+  }
+}

@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+header {
+  position: sticky;
+  top: 0;
+  background: #003366;
+  color: white;
+  padding: 1em;
+}
+nav a {
+  margin-right: 1em;
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  background: url('hero.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.about {
+  display: flex;
+  padding: 2em;
+}
+.about .text {
+  flex: 1;
+  padding: 1em;
+}
+.about .image img {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #ccc;
+}
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+}
+.service {
+  background: rgba(0,119,182,0.1);
+  padding: 1em;
+  border: 1px solid #0077b6;
+  border-radius: 5px;
+}
+.contact {
+  padding: 2em;
+  background: linear-gradient(to right, #e0f7fa, #fff);
+}
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+}
+form button {
+  padding: 0.7em 1.5em;
+  background: #0077b6;
+  color: white;
+  border: none;
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #003366;
+  color: white;
+}
