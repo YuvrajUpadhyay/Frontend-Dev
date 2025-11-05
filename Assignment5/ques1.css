@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header, main, footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items: center;
+}
+
+.about, .image {
+  flex: 1;
+  padding: 20px;
+}
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+footer {
+  justify-content: center;
+}
+
+@media (max-width: 700px) {
+  header, main {
+    flex-direction: column;
+    align-items: center;
+  }
+}

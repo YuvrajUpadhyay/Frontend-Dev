@@ -1,0 +1,29 @@
+.blog {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+header { grid-area: header; }
+aside { grid-area: aside; }
+main { grid-area: main; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+footer { grid-area: footer; }
+
+@media (max-width: 800px) {
+  .blog {
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    grid-template-columns: 1fr;
+  }
+}
