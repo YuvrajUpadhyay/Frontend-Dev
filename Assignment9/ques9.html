@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Pagination</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    .blog-post {
+      border-bottom: 1px solid #dee2e6;
+    }
+  </style>
+</head>
+<body>
+  <main class="container my-5">
+    <section>
+      <h2 class="mb-4">Recent Posts</h2>
+      <div class="blog-post mb-3">
+        <h5>Understanding CNNs</h5>
+        <p>Exploring convolutional layers and feature maps.</p>
+      </div>
+      <div class="blog-post mb-3">
+        <h5>Deploying with Nginx</h5>
+        <p>Reverse proxy setup for ML apps.</p>
+      </div>
+
+      <nav>
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="text-center p-3">
+    <p>&copy; 2025 Blog Central</p>
+  </footer>
+</body>
+</html>
